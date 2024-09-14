@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --orange:#ff8139;
+    --pink:#ff3998;
+    --red:#ff3939;
+    --green:#39ffa0;
+    --light-green:#edfff6;
+    --light-orangr:#fff0e8;
+    --accent-color1:#ffffff;
+    --accent-color3:#ffff;
+    --accent-color2:#cccccc;
+    --card-color:#000000;
+    --background: #111111;
+    --font-family: "Inter", sans-serif;
+}
+[data-theme="light"]{
+--background:#ffffff;
+--accent-color1:#ffffff;
+--accent-color3:#555555;
+--accent-color2:#cccccc;
+--card-color:#eeeeee;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.continerr{
+overflow: hidden;
+}
+.container{
+
+    background-color: var(--background);
+   font-family:var(--font-family) ;
+   transition: 0.5s ease-in-out;
+   padding: 2rem 4rem;
+   @media screen and (min-width:100px) and (max-width:280px){
+    padding: 0;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+   }
+ 
+    
+   
+}
+::-webkit-scrollbar{
+    background-color:#111111 ;
+    width: 0.2rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--orange);
+}
